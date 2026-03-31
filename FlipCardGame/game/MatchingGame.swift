@@ -25,5 +25,6 @@ class MatchingGame {
             cards.append(card)
             cards.append(card)
         }
+        cards.shuffle()
     }
 }

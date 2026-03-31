@@ -47,7 +47,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICW-EG-HZb">
-                                <rect key="frame" x="116" y="190" width="75" height="102"/>
+                                <rect key="frame" x="115" y="190" width="75" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.69411766529999996" green="0.80000001190000003" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -91,6 +91,76 @@
                                     <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iev-VJ-EKz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfl-yP-pja">
+                                <rect key="frame" x="22" y="317" width="75" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69411766529999996" green="0.79607844350000001" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="🩰">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kZh-ap-NPp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHF-xJ-0HD">
+                                <rect key="frame" x="115" y="317" width="75" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69411766529999996" green="0.80000001190000003" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="🍐">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="reM-ug-kD8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Fx-Wm-LNp">
+                                <rect key="frame" x="210" y="317" width="75" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69411766529999996" green="0.80000001190000003" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="🩰">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jga-ay-CgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6B-Fa-CxF">
+                                <rect key="frame" x="305" y="317" width="75" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69411766529999996" green="0.80000001190000003" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="🍐">
+                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkQ-KU-Q1A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqO-FF-2gP">
+                                <rect key="frame" x="229" y="656" width="116" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.8156862855" green="0.77254903320000001" blue="0.71372550729999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8SZ-MM-mBe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.94509804249999996" green="0.89411771299999998" blue="0.82352948189999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -102,6 +172,10 @@
                         <outletCollection property="cardButtons" destination="l29-Za-bWl" collectionClass="NSMutableArray" id="8L5-96-aC0"/>
                         <outletCollection property="cardButtons" destination="ICW-EG-HZb" collectionClass="NSMutableArray" id="9mg-NT-m8g"/>
                         <outletCollection property="cardButtons" destination="8AB-4A-JHy" collectionClass="NSMutableArray" id="kNu-ug-f0L"/>
+                        <outletCollection property="cardButtons" destination="A6B-Fa-CxF" collectionClass="NSMutableArray" id="gk2-8T-q2h"/>
+                        <outletCollection property="cardButtons" destination="3Fx-Wm-LNp" collectionClass="NSMutableArray" id="49P-NS-f0o"/>
+                        <outletCollection property="cardButtons" destination="CHF-xJ-0HD" collectionClass="NSMutableArray" id="I4i-dL-43s"/>
+                        <outletCollection property="cardButtons" destination="Lfl-yP-pja" collectionClass="NSMutableArray" id="eRG-Ez-FFw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

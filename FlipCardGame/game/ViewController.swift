@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var flip: UILabel!
     @IBOutlet var cardButtons: [UIButton]!
     
-    let emojiChoices = ["🥨","🍐","🍊","🧃"]
+    var emojiChoices = ["🥨","🍐","🍊","🧃"]
     
     lazy var game: MatchingGame = MatchingGame(numberOfPairsCards: (cardButtons.count+1/2))
     
@@ -23,13 +23,16 @@ class ViewController: UIViewController {
         }
     }
     
-    func getEmoji(at index:Int) -> String {
-        if index < emojiChoices.count {
-            title = emojiChoices[index]
-        } else {
-            title = "?"
+    var emojiDictionary = Dictionary<Int, String>()
+    
+    func getEmoji(for card: Card) -> String {
+        if emojiDictionary[card.identifier] == nil, emojiChoices.count > 0 {
+            let randomIndex = Int(arc4random_uniform(UInt32(emojiChoices.count)))
+            
+            emojiDictionary[card.identifier] = emojiChoices.remove(at: randomIndex)
+            
         }
-        return title ?? "?"
+        return emojiDictionary[card.identifier] ?? "?"
     }
     
     //let title = getEmoji(for: card)
@@ -43,7 +46,7 @@ class ViewController: UIViewController {
                 button.setTitle("", for: UIControl.State.normal)
                 button.backgroundColor = #colorLiteral(red: 0.6672183871, green: 0.8040646315, blue: 0.8617751002, alpha: 1)
             } else {
-                button.setTitle(getEmoji(at: index), for: UIControl.State.normal)
+                button.setTitle(getEmoji(for: card), for: UIControl.State.normal)
                 button.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             }
         }
@@ -51,7 +54,7 @@ class ViewController: UIViewController {
     
     @IBAction func btn1(_ sender: UIButton) {
         if let index = cardButtons.firstIndex(of: sender){
-            let selectCard = game.chooseCard(at: index)
+            _ = game.chooseCard(at: index)
             updateViewFromModel()
             Count += 1
         } else {
@@ -73,6 +76,17 @@ class ViewController: UIViewController {
         )
 
         flip.attributedText = attribtext
+    }
+    
+    @IBAction func resetGame(_ sender: Any) {
+        game = MatchingGame(numberOfPairsCards: cardButtons.count / 2)
+
+        emojiChoices = ["🥨","🍐","🍊","🧃"]
+        emojiDictionary.removeAll()
+        
+        Count = 0
+        
+        updateViewFromModel()
     }
     
     override func viewDidLoad() {
